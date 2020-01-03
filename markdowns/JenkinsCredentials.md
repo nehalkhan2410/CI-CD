@@ -16,7 +16,7 @@ You can use an existing **ID** from the available credentials in the Pipeline.
 
 ## *To Modify Existing / Add Credentials:*
 
-Click on global option under **Domain** column of the **Credentials** section to get redirected to **Global Credentials** page.
+Click on global option under **Domain** column of the **Credentials** section to get redirected to **Global Credentials** page as below:
 
 <img src="../images/global_credentials_page.png" alt="global_credentials_page" style="height:200px;"/>
 
@@ -26,9 +26,9 @@ You can create new set of credentials to be used in pipeline by clicking on **Ad
 
 <img src="../images/options_for_credentials.png" alt="options_for_credentials" style="height:150px;"/>
 
-You can select from the following type of credentials you want to create.
+You can select type of credentials you want to create as shown above.
 Here, we are selecting `Username with password` type for demonstration.
-But you can explore all the other available options as well.
+But you can explore all the other available options.
 
 <img src="../images/add_credentials.png" alt="add_credentials" style="height:200px;"/>
 
@@ -40,7 +40,7 @@ Provide `ID` for the credential this will be used as unique identifier to use th
 
 Provide `Description` for the credential you are creating.
 
-Once you filled out all the required fields click on `OK` button to save the credentials.
+Once you fill all the required fields, click on `OK` button to save the credentials.
 
 Now the `ID` you have provided while creating this set of credentials or an `ID` from available credentials can be used in the Pipeline.
 
