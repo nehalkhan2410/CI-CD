@@ -8,7 +8,7 @@ You can check all the avaialble options [here](https://jenkins.io/doc/pipeline/s
 
 All the following options and parameters in the checkout step vary depending on the chosen SCM.
 
-<span style="color:cyan">*Code Snippet to Checkout Code from **GitHub** and use it as part of a pipeline.*</span>
+<span style="color:orange">*Code Snippet to Checkout Code from **GitHub** and use it as part of a pipeline.*</span>
 
 
 ```groovy
