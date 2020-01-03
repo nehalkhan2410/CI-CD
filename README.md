@@ -37,7 +37,6 @@ All the options and parameters in the checkout step vary depending on the chosen
 
 - All branches if **no parameter** is passed.
 
-
 `doGenerateSubmoduleConfigurations: boolean`
 
 `extensions: array` here we pass **no parameter** but we can pass various extensions that are available for `GitSCM` 
@@ -49,8 +48,6 @@ All the options and parameters in the checkout step vary depending on the chosen
 - `branches: array`
 
 `userRemoteConfigs: array` Specify the repository to track. This can be a URL or a local file path. Accepts four paramters as follows:
-
-
 
 - `credentialsId: string` takes ID of the credential that is configured in Jenkins as paramter. 
 
