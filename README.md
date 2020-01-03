@@ -14,7 +14,7 @@ All the following options and parameters in the checkout step vary depending on 
 ```groovy
 
     checkout([
-        $class: 'GitSCM', 
+        $class: 'GitSCM <scm_name>', 
         branches: [[name: 'branch_name']], 
         doGenerateSubmoduleConfigurations: false, 
         extensions: [], submoduleCfg: [], 
@@ -25,13 +25,15 @@ All the following options and parameters in the checkout step vary depending on 
 
 ```
 
-### Brief explanation of the above used options and parameters.
+### Brief explanation of the options and parameters used.
+
+### *Predefined paramters used above*
 
 `$class` option is used to provide name of specific SCM you can want to use in the whole checkout step. Since, we are using Git as version control system we pass `GitSCM` as parameter, more details on all available SCMs [here](https://jenkins.io/doc/pipeline/steps/workflow-scm-step/)
 
 **All the below paramters are related to `GitSCM` and will vary depending upon the SCM we decide to use.**
 
-`branches: array` accepts one paramter as below:
+`branches: array` accepts one paramter as follows:
 
 - `name: string` name of the specific branch to be used.
 
@@ -42,7 +44,7 @@ All the following options and parameters in the checkout step vary depending on 
 
 `extensions: array` here we pass **no parameter** but we can pass various extensions that are available for `GitSCM` 
 
-`submoduleCfg: array` here we pass **no parameter** but accepts two parameters
+`submoduleCfg: array` here we pass **no parameter** but accepts two parameters as follows:
 
 - `submoduleName: string`
 
@@ -54,15 +56,19 @@ All the following options and parameters in the checkout step vary depending on 
 
 - `credentialsId: string` takes ID of the credential that is configured in Jenkins as paramter. 
 
-- `url: string` url to the git reposirtory.
+- `url: string` takes url to the git reposirtory.
 
-- `name: string` ID of the repository, such as origin, to uniquely identify this repository among other remote repositories.
+- `name: string` takes ID of the repository, such as origin, to uniquely identify this repository among other remote repositories.
 
-- `refspec: string` A refspec controls the remote refs to be retrieved and how they map to local refs
+- `refspec: string` takes refspec controls the remote refs to be retrieved and how they map to local refs.
 
-`branch_name` name: *string* of the branch to be used.
+### *User provided parameters used above*
 
-`jenkins_credential_id` ID: *string* of the credentials setup as part of jenkins configurations that can be setup as mentioned [here](). 
+`scm_name:`*string* takes name of SCM to be used here we used **`GitSCM`** as SCM.
 
-`git_url` url: *string* of the git repository to be used. 
+`branch_name:`*string* takes name of the branch to be used.
+
+`jenkins_credential_id:`*string* takes ID of the credentials setup as part of jenkins configurations that can be setup as mentioned [here](). 
+
+`git_url:`*string* takes url of the git repository to be used. 
 
