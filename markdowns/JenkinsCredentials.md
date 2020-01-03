@@ -1,16 +1,20 @@
 # Jenkins Credentails Setup
 
-Open Jenkins instance.
+Open your Jenkins instance.
 
-In the left panel you will find you will find credentials options.  
+## *To View Existing Credentials:*
+
+In the left panel you will find **Credentials** options.  
 
 <img src="../images/Jenkins_left_panel.png" alt="Jenkins_left_panel" style="width:140px;height:250px;"/>
 
-Click on the credentials option then you will be able to see all the available credentials configured on the jenkins instance running as below:
+Click on the Credentials option, then you will be able to see all the available credentials configured on the Jenkins instance as below:
 
 <img src="../images/credentials_page.png" alt="credentials_page" style="height:200px;"/>
 
-You can use the existing IDs of the credentials in the pipeline.
+You can use an existing **ID** from the available credentials in the Pipeline.
+
+## *To Modify Existing / Add Credentials:*
 
 Click on global option under **Domain** column of the **Credentials** section to get redirected to **Global Credentials** page.
 
@@ -24,7 +28,7 @@ You can create new set of credentials to be used in pipeline by clicking on **Ad
 
 You can select from the following type of credentials you want to create.
 Here, we are selecting `Username with password` type for demonstration.
-But you can explore on all the other available options as well.
+But you can explore all the other available options as well.
 
 <img src="../images/add_credentials.png" alt="add_credentials" style="height:200px;"/>
 
@@ -38,5 +42,5 @@ Provide `Description` for the credential you are creating.
 
 Once you filled out all the required fields click on `OK` button to save the credentials.
 
-Now the `ID` you have provided while creating this set of credentials or the `ID` from an already available credentials can you used in the Pipeline.
+Now the `ID` you have provided while creating this set of credentials or an `ID` from available credentials can be used in the Pipeline.
 
