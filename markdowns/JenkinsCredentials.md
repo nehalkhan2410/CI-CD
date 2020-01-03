@@ -8,7 +8,7 @@ In the left panel you will find **Credentials** options.
 
 <img src="../images/Jenkins_left_panel.png" alt="Jenkins_left_panel" style="width:140px;height:250px;"/>
 
-Click on the Credentials option, then you will be able to see all the available credentials configured on the Jenkins instance as below:
+Click on the **Credentials** option, then you will be able to see all the available credentials configured on the Jenkins instance as below:
 
 <img src="../images/credentials_page.png" alt="credentials_page" style="height:200px;"/>
 
@@ -22,7 +22,7 @@ Click on global option under **Domain** column of the **Credentials** section to
 
 By clicking on available credentials you will be able to `update, delete or move` the existing credentials.
 
-You can create new set of credentials to be used in pipeline by clicking on **Add credentials** option from left panel.
+You can create new set of credentials to be used in pipeline by clicking on **Add Credentials** option from left panel.
 
 <img src="../images/options_for_credentials.png" alt="options_for_credentials" style="height:150px;"/>
 
