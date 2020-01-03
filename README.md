@@ -2,11 +2,9 @@
 
 ## 1. Checkout from GitHub 
 
-The Checkout step has a large variety of Software Configuration Managements (SCMs) available. 
+The Checkout step has a large variety of Software Configuration Managements (SCMs) available.
 
-You can check all the avaialble options [here](https://jenkins.io/doc/pipeline/steps/workflow-scm-step/)
-
-All the following options and parameters in the checkout step vary depending on the chosen SCM.
+All the options and parameters in the checkout step vary depending on the chosen SCM.
 
 <span style="color:orange">*Code Snippet to Checkout Code from **GitHub** and use it as part of a pipeline.*</span>
 
@@ -14,12 +12,12 @@ All the following options and parameters in the checkout step vary depending on 
 ```groovy
 
     checkout([
-        $class: 'GitSCM <scm_name>', 
-        branches: [[name: 'branch_name']], 
+        $class: 'GitSCM or <scm_name>', 
+        branches: [[name: '<branch_name>']], 
         doGenerateSubmoduleConfigurations: false, 
         extensions: [], submoduleCfg: [], 
         userRemoteConfigs: [
-            [credentialsId: 'jenkins_credential_id', url: 'git_url']
+            [credentialsId: '<jenkins_credential_id>', url: '<git_url>']
         ]
     ])
 
@@ -29,9 +27,9 @@ All the following options and parameters in the checkout step vary depending on 
 
 ### *Predefined paramters used above*
 
-`$class` option is used to provide name of specific SCM you can want to use in the whole checkout step. Since, we are using Git as version control system we pass `GitSCM` as parameter, more details on all available SCMs [here](https://jenkins.io/doc/pipeline/steps/workflow-scm-step/)
+`$class` option is used to provide name of a specific SCM you can want to use in the whole checkout step. Since, we are using Git as version control system we pass `GitSCM` as parameter, more details on all available SCMs [here](https://jenkins.io/doc/pipeline/steps/workflow-scm-step/)
 
-**All the below paramters are related to `GitSCM` and will vary depending upon the SCM we decide to use.**
+**All the below paramters are related to `GitSCM` and will vary depending upon the SCM we choose.**
 
 `branches: array` accepts one paramter as follows:
 
@@ -68,8 +66,7 @@ All the following options and parameters in the checkout step vary depending on 
 
 `branch_name:`*string* takes name of the branch to be used.
 
-`jenkins_credential_id:`*string* takes ID of the credentials setup as part of jenkins configurations that can be setup as mentioned [here](./jenkinsConfig.md). 
-
+`jenkins_credential_id:`*string* takes ID of the credentials that are setup as part of Jenkins Configurations. The Jenkins Credentials Setup can be refered [here](./markdowns/JenkinsCredentials.md). 
 
 `git_url:`*string* takes url of the git repository to be used. 
 
