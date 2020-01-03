@@ -68,7 +68,8 @@ All the following options and parameters in the checkout step vary depending on 
 
 `branch_name:`*string* takes name of the branch to be used.
 
-`jenkins_credential_id:`*string* takes ID of the credentials setup as part of jenkins configurations that can be setup as mentioned [here](https://github.com/nehalkhan2410/CI-CD/blob/master/jenkinsConfig.md). 
+`jenkins_credential_id:`*string* takes ID of the credentials setup as part of jenkins configurations that can be setup as mentioned [here](jenkinsConfig.md). 
+
 
 `git_url:`*string* takes url of the git repository to be used. 
 
