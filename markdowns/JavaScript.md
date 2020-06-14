@@ -107,7 +107,7 @@ console.log(pA(user));
 </body>
 </html>
 ```
-> ### Note: Attribute `type="module"` need to added in script tag incase you want to use modules in plain html which in-turn by default adds the `defer` attribute to script tag to load the scripts
+> ##### Note: Attribute `type="module"` need to added in script tag incase you want to use modules in plain html which in-turn by default adds the `defer` attribute to script tag to load the scripts
 
 The browsers that dont support modules will completely ignore the script tag without loading it and a way to overcome this is by using `nomodule` attribute if you want to use ES6 modules.
 
