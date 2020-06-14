@@ -1,9 +1,9 @@
-## Modules
+## **Modules:**
 
 
-### According to ES6 exporting the modules can be done in either of the ways as shown:
+### **According to ES6 exporting the modules can be done in either of the ways as shown:**
 
-#### Export can be done inline as below:
+### Export can be done inline as below:
 
 user.js
 ```javascript
@@ -23,7 +23,7 @@ export function printAge(user){
 }
 ```
 
-#### Everything can be exported at the end like:
+### Everything can be exported at the end like:
 
 user.js
 ```javascript
@@ -107,16 +107,17 @@ console.log(pA(user));
 </body>
 </html>
 ```
-> #### Note: Attribute `type="module"` need to added in script tag incase you want to use modules in plain html which in-turn by default adds the `defer` attribute to script tag to load the scripts
+> ### Note: Attribute `type="module"` need to added in script tag incase you want to use modules in plain html which in-turn by default adds the `defer` attribute to script tag to load the scripts
 
-### The browsers that dont support modules will completely ignore the script tag without loading it and a way to overcome this is by using `nomodule` attribute if you want to use ES6 modules.
+The browsers that dont support modules will completely ignore the script tag without loading it and a way to overcome this is by using `nomodule` attribute if you want to use ES6 modules.
 
-### But the recommended way is to use tools like `bable` to make use of newer ES6 modules to be usable in older browsers.
+But the recommended way is to use tools like `bable` to make use of newer ES6 modules to be usable in older browsers.
 
-### Older Way of exporting modules is shown below:
+### **Older Way of exporting modules is shown below:**
 
-#### These type of export and import is still widely used in nodejs community.
-#### Export can be done inline as below:
+These type of export and import are still widely used in nodejs community.
+
+### Export can be done inline as below:
 
 user.js
 ```javascript 
