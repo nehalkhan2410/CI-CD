@@ -47,7 +47,7 @@ export default User
 export { printName, printAge }
 ```
 
-you can use `default` to a export only once in the whole file which would mostly be for the main object.
+you can use `default` to export only once in the whole file which would mostly be for the main object.
 
 ### You can import the modules like:
 
@@ -74,7 +74,7 @@ console.log(printAge(user));
 
 main.js
 ```javascript
-// You can provide alias to default export
+// You can provide an alias to the default export
 import U from './user.js';
 
 // other non-default objects and functions can be given alias
@@ -107,15 +107,15 @@ console.log(pA(user));
 </body>
 </html>
 ```
-> ##### Note: Attribute `type="module"` need to added in script tag incase you want to use modules in plain html which in-turn by default adds the `defer` attribute to script tag to load the scripts
+> #### Note: Attribute `type="module"` need to be added in the script tag in case you want to use modules in plain HTML which in-turn by default adds the `defer` attribute to script tag to load the scripts
 
-The browsers that dont support modules will completely ignore the script tag without loading it and a way to overcome this is by using `nomodule` attribute if you want to use ES6 modules.
+The browsers that don't support modules will completely ignore the script tag without loading it and a way to overcome this is by using the `nomodule` attribute if you want to use ES6 modules.
 
 But the recommended way is to use tools like `bable` to make use of newer ES6 modules to be usable in older browsers.
 
 ### **Older Way of exporting modules is shown below:**
 
-These type of export and import are still widely used in nodejs community.
+These types of export and import are still widely used in the nodejs community.
 
 ### Export can be done inline as below:
 
@@ -150,4 +150,3 @@ console.log(user);
 U.printName(user);
 U.printAge(user);
 ```
-
